@@ -7,34 +7,44 @@ html, body {
 header{
     background-color: aqua;
     height: 60px;
+    grid-area: header;
 }
 
-#wrapper {
+/*#wrapper {
     background-color: blueviolet;
     overflow: hidden;
     display: flex;
-    flex-direction: row-reverse;
-}
+    /*flex-direction: row-reverse;*/
+
 
 nav{
     background-color: brown;
-    width: 25%;
+    grid-area: menu;
+    /* width: 25% ; */
 }
 
 article{
     background-color: bisque;
-    width: 75%;
     height: 80px;
+    grid-area: content;
 }
 
 footer{
     /*clear: both;*/
     background-color: green;
     height: 120px;
+    grid-area: footer;
 }
 
 #container{
     background-color: tomato;
     margin: 0px auto;
     max-width: 800px;
+
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "menu content content content"
+    "footer footer footer footer"
+    ;
 }
