@@ -9,26 +9,26 @@ header{
     height: 60px;
 }
 
-section{
+#wrapper {
     background-color: blueviolet;
     overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 nav{
     background-color: brown;
     width: 25%;
-    float: left;
 }
 
 article{
     background-color: bisque;
-    width: 55%;
+    width: 75%;
     height: 80px;
-    float: left;
 }
 
 footer{
-    clear: both;
+    /*clear: both;*/
     background-color: green;
     height: 120px;
 }
